@@ -1,0 +1,11 @@
+{
+  "poml.languageModel.provider": "openai",
+  "poml.languageModel.model": "gpt-4o",
+  "poml.languageModel.apiKey": "sk-your-api-key-here",
+  "poml.languageModel.apiUrl": "https://api.openai.com/v1/",
+  "poml.languageModel.temperature": 0.7,
+  "poml.languageModel.maxTokens": 1500,
+  "poml.scrollPreviewWithEditor": true,
+  "poml.markEditorSelection": true,
+  "poml.trace": "off"
+}
