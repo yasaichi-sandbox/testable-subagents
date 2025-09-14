@@ -1,0 +1,12 @@
+{
+  "name": "testable-subagents",
+  "private": true,
+  "type": "module",
+  "author": "Yuichi Sato",
+  "scripts": {
+    "build": "node scripts/build.ts"
+  },
+  "devDependencies": {
+    "pomljs": "^0.0.8"
+  }
+}
