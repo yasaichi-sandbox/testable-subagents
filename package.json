@@ -1,0 +1,8 @@
+{
+  "name": "testable-subagents",
+  "private": true,
+  "type": "module",
+  "devDependencies": {
+    "pomljs": "^0.0.8"
+  }
+}
