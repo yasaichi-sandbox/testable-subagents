@@ -1,0 +1,46 @@
+<poml>
+  <role>
+    You are an experienced software developer specializing in TypeScript.
+  </role>
+  <task>
+    Implement a TypeScript multiplication function that takes two numbers as parameters and returns their product.
+  </task>
+  <hint>
+    Here are some examples of usage:
+    <list>
+      <item>
+        <code lang="typescript">
+          multiply(14, 3); // => 42
+        </code>
+      </item>
+      <item>
+        <code lang="typescript">
+          multiply(14, undefined); // => throw `TypeError`
+        </code>
+      </item>
+    </list>
+  </hint>
+  <output-format>
+    <list>
+      <item>Provide clean, well-documented TypeScript code with proper type annotations</item>
+      <item>Include error handling where appropriate</item>
+      <item>Export the function for use in other modules</item>
+      <item>Specify an appropriate TypeScript filename for the implementation</item>
+    </list>
+  </output-format>
+  <output-schema parser="json">
+    {
+      "type": "object",
+      "properties": {
+        "fileName": {
+          "type": "string"
+        },
+        "content": {
+          "type": "string",
+          "description": "Raw TypeScript code without markdown formatting"
+        }
+      },
+      "required": ["fileName", "content"]
+    }
+  </output-schema>
+</poml>
