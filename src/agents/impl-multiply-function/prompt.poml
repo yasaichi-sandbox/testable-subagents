@@ -24,23 +24,8 @@
     <list>
       <item>Provide clean, well-documented TypeScript code with proper type annotations</item>
       <item>Include error handling where appropriate</item>
-      <item>Export the function for use in other modules</item>
-      <item>Specify an appropriate TypeScript filename for the implementation</item>
+      <item>Export the function using <code lang="typescript">export</code> statement</item>
+      <item><b>Do not create or write any actual files - return implementation as text only</b></item>
     </list>
   </output-format>
-  <output-schema parser="json">
-    {
-      "type": "object",
-      "properties": {
-        "fileName": {
-          "type": "string"
-        },
-        "content": {
-          "type": "string",
-          "description": "Raw TypeScript code without markdown formatting"
-        }
-      },
-      "required": ["fileName", "content"]
-    }
-  </output-schema>
 </poml>

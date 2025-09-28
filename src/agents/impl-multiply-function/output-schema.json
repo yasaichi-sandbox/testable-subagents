@@ -1,0 +1,13 @@
+{
+  "type": "object",
+  "properties": {
+    "fileName": {
+      "type": "string"
+    },
+    "content": {
+      "type": "string",
+      "description": "Raw TypeScript code without markdown formatting"
+    }
+  },
+  "required": ["fileName", "content"]
+}
