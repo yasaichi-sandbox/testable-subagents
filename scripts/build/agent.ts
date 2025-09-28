@@ -19,7 +19,7 @@ try {
     join(rootDir, '.claude', 'agents', `${basename(agentDir)}.md`),
     [
       '---',
-      await readFile(join(agentDir, 'metadata.yml')),
+      await readFile(join(agentDir, 'prompt.meta.yml')),
       '---',
       await transpile(join(agentDir, 'prompt.poml')),
     ].join('\n')

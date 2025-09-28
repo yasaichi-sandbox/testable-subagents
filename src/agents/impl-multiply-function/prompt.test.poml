@@ -9,7 +9,7 @@
           @agent-impl-multiply-function Return string that follows the following JSON Schema..
 
           <code inline="false" lang="json">
-            <include src="./output-schema.json" />
+            <include src="./prompt.schema.json" />
           </code>
         </item>
         <item>
