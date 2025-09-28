@@ -1,8 +1,16 @@
 {
   "name": "testable-subagents",
-  "private": true,
-  "type": "module",
   "devDependencies": {
-    "pomljs": "^0.0.8"
-  }
+    "@types/node": "24.5.2",
+    "npm-run-all2": "8.0.4",
+    "pomljs": "0.0.8"
+  },
+  "private": true,
+  "scripts": {
+    "build": "run-p build:*",
+    "build:agent": "node ./scripts/build/agent.ts ./src/agents/impl-multiply-function",
+    "build:test": "node ./scripts/build/test.ts ./src/agents/impl-multiply-function",
+    "test": "claude -p '/test-impl-multiply-function'"
+  },
+  "type": "module"
 }

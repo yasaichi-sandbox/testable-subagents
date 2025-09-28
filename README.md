@@ -15,20 +15,17 @@ See: <https://microsoft.github.io/poml/latest/vscode/features/#side-preview>
 > [!NOTE]
 > You are required to install [jq](https://github.com/jqlang/jq) in advance.
 
-## Testing Prompts
-
-See: <https://microsoft.github.io/poml/latest/vscode/features/#testing-prompts>
-
 ## Building Prompts
 
-### To File
-
 ```sh
-./bin/poml.ts -f ./src/prompts/hello-world.poml -o ./hello-world.json
+npm run build
 ```
 
-### To STDOUT
+## Testing Prompts
 
 ```sh
-./bin/poml.ts -f ./src/prompts/hello-world.poml
+npm run test
 ```
+
+> [!NOTE]
+> You are required to install [claude code](https://docs.claude.com/en/docs/claude-code/overview) in advance.
