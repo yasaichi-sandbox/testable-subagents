@@ -9,12 +9,17 @@
     Here are some examples of usage:
     <list>
       <item>
-        <code lang="typescript">
+        <code inline="false" lang="typescript">
           multiply(14, 3); // => 42
         </code>
       </item>
       <item>
-        <code lang="typescript">
+        <code inline="false" lang="typescript">
+          multiply(14, NaN); // => NaN
+        </code>
+      </item>
+      <item>
+        <code inline="false" lang="typescript">
           multiply(14, undefined); // => throw `TypeError`
         </code>
       </item>
@@ -25,7 +30,7 @@
       <item>Provide clean, well-documented TypeScript code with proper type annotations</item>
       <item>Include error handling where appropriate</item>
       <item>Export the function using <code lang="typescript">export</code> statement</item>
-      <item><b>Do not create or write any actual files - return implementation as text only</b></item>
+      <item><b>Do not create or write any actual files</b> - return implementation as text only</item>
     </list>
   </output-format>
 </poml>

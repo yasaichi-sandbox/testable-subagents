@@ -1,0 +1,2 @@
+argument-hint: [agent-name]
+description: Test the [agent-name] by evaluating its TypeScript function implementation against specific criteria.

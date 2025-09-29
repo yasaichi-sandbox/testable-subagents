@@ -6,21 +6,22 @@
     <stepwise-instructions>
       <list>
         <item>
-          @agent-impl-multiply-function Return string that follows the following JSON Schema..
+          @$1 Return string that follows the following JSON Schema.
 
           <code inline="false" lang="json">
             <include src="./prompt.schema.json" />
           </code>
         </item>
         <item>
-          You will receive a TypeScript function implementation in <code>output.content</code> that is intended to perform multiplication. First, display the function to the user exactly as provided.
+          Display the contents of <code>output.content</code> with TypeScript syntax highlighting.
         </item>
         <item>
-          After that, evaluate the implementation against the following test criteria:
+          Evaluate that implementation against the following test criteria:
 
           <list>
-            <item>Test 1: The function should return 42 (number type) when called with <code lang="typescript">func(6, 7)</code></item>
+            <item>Test 1: The function should correctly multiply two numbers and return 42 when called with <code lang="typescript">func(6, 7)</code></item>
             <item>Test 2: The function should throw a <code lang="typescript">TypeError</code> when called with <code lang="typescript">func(5, undefined)</code></item>
+            <item>Test 3: The function should return <code lang="typescript">NaN</code> when called with <code lang="typescript">func(NaN, 5)</code></item>
           </list>
         </item>
       </list>

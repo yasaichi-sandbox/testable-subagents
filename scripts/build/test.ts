@@ -17,7 +17,12 @@ const agentDir = join(rootDir, args[0]);
 try {
   await writeFile(
     join(rootDir, '.claude', 'commands', `test-${basename(agentDir)}.md`),
-    await transpile(join(agentDir, 'prompt.test.poml'))
+    [
+      '---',
+      await readFile(join(agentDir, 'prompt.test.meta.yml')),
+      '---',
+      await transpile(join(agentDir, 'prompt.test.poml')),
+    ].join('\n')
   );
 } catch (err) {
   console.error(err);

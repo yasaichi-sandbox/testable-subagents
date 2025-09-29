@@ -10,7 +10,7 @@
     "build": "run-p build:*",
     "build:agent": "node ./scripts/build/agent.ts ./src/agents/impl-multiply-function",
     "build:test": "node ./scripts/build/test.ts ./src/agents/impl-multiply-function",
-    "test": "claude -p '/test-impl-multiply-function'"
+    "test": "claude -p '/test-impl-multiply-function agent-impl-multiply-function'"
   },
   "type": "module"
 }
