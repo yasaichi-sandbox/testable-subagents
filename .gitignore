@@ -138,8 +138,12 @@ dist
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
 
-# Claude Code
+# Build results
 .claude/agents/*
 !.claude/agents/.keep
 .claude/commands/*
 !.claude/commands/.keep
+
+# Execution results
+artifacts/*
+!artifacts/.keep
