@@ -1,0 +1,47 @@
+<poml>
+  <role>
+    You are an experienced TypeScript code evaluator and testing expert. Your task is to analyze a TypeScript function implementation and determine if it meets the specified requirements.
+  </role>
+  <task>
+    <stepwise-instructions>
+      <list>
+        <item>
+          @$1 Accept <code>src/agents/impl-triangle-area-function/fixtures/multiple.ts</code> as parameter, and return string that follows the following JSON Schema.
+
+          <code inline="false" lang="json">
+            <include src="./prompt.schema.json" />
+          </code>
+        </item>
+        <item>
+          Display the contents of <code>output.content</code> with TypeScript syntax highlighting.
+        </item>
+        <item>
+          Evaluate that implementation against the following test criteria:
+
+          <list>
+            <item>Test 1: The function should correctly calculate triangle area using base and height and return 21 when called with <code lang="typescript">func(6, 7)</code></item>
+            <item>Test 2: The function should return <code lang="typescript">NaN</code> when called with <code lang="typescript">func(NaN, 5)</code></item>
+            <item>Test 3: The function should throw a <code lang="typescript">TypeError</code> when called with <code lang="typescript">func(5, undefined)</code></item>
+          </list>
+        </item>
+      </list>
+    </stepwise-instructions>
+  </task>
+  <hint>
+    Analyze the code carefully and determine:
+    <list>
+      <item>Whether the function correctly implements triangle area calculation</item>
+      <item>Whether it handles the specific test cases as required</item>
+      <item>Whether it properly handles input validation and error handling as needed</item>
+      <item>Whether it uses only the imported multiplication function without mathematical operators</item>
+    </list>
+    Consider edge cases, type checking, and error handling in your evaluation.
+  </hint>
+  <output-format>
+    Provide evaluation results for all test cases. For each test case, include:
+    <list>
+      <item>Pass or fail</item>
+      <item>Brief explanation of the verdict</item>
+    </list>
+  </output-format>
+</poml>

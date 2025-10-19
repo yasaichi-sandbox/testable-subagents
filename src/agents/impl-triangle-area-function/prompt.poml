@@ -1,0 +1,43 @@
+<poml>
+  <role>
+    You are an experienced software developer specializing in TypeScript.
+  </role>
+  <task>
+    Implement a TypeScript function that takes the base and height of a triangle and returns its area.
+
+    <stepwise-instructions>
+      <list>
+        <item>
+          Read the multiplication function file passed as a parameter to understand its exported function.
+        </item>
+        <item>
+          Implement the triangle area function using the exported multiplication function from the file.
+        </item>
+      </list>
+    </stepwise-instructions>
+  </task>
+  <hint>
+    Here are some examples of usage:
+    <list>
+      <item>
+        <code inline="false" lang="typescript">
+          triangleArea(14, 3); // => 21
+        </code>
+      </item>
+      <item>
+        <code inline="false" lang="typescript">
+          triangleArea(14, undefined); // => throw `TypeError`
+        </code>
+      </item>
+    </list>
+  </hint>
+  <output-format>
+    <list>
+      <item>Provide clean, well-documented TypeScript code with proper type annotations</item>
+      <item>Rely on the imported multiplication function for error handling</item>
+      <item><b>Do not use mathematical operators</b> - use only the imported multiplication function for calculations</item>
+      <item>Export the function using <code lang="typescript">export</code> statement</item>
+      <item><b>Do not create or write any actual files</b> - return implementation as text only</item>
+    </list>
+  </output-format>
+</poml>

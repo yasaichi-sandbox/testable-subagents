@@ -8,9 +8,14 @@
   "private": true,
   "scripts": {
     "build": "run-p build:*",
-    "build:agent": "node ./scripts/build/agent.ts ./src/agents/impl-multiply-function",
-    "build:test": "node ./scripts/build/test.ts ./src/agents/impl-multiply-function",
-    "test": "claude -p '/test-impl-multiply-function agent-impl-multiply-function'"
+    "build:agent": "run-p build:agent:*",
+    "build:agent:multiply": "node ./scripts/build/agent.ts ./src/agents/impl-multiply-function",
+    "build:agent:triangle-area": "node ./scripts/build/agent.ts ./src/agents/impl-triangle-area-function",
+    "build:test": "run-p build:test:*",
+    "build:test:multiply": "node ./scripts/build/test.ts ./src/agents/impl-multiply-function",
+    "build:test:triangle-area": "node ./scripts/build/test.ts ./src/agents/impl-triangle-area-function",
+    "test:multiply": "claude -p '/test-impl-multiply-function agent-impl-multiply-function'",
+    "test:triangle-area": "claude -p '/test-impl-triangle-area-function agent-impl-triangle-area-function'"
   },
   "type": "module"
 }
