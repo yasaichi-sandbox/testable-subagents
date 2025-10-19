@@ -1,0 +1,3 @@
+allowed-tools: Write
+argument-hint: [output-dir]
+description: Implement a triangle area calculation function to [output-dir] directory.

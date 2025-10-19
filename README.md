@@ -21,11 +21,18 @@ See: <https://microsoft.github.io/poml/latest/vscode/features/#side-preview>
 npm run build
 ```
 
+## Running Workflow
+
+```sh
+npm start
+```
+
 ## Testing Prompts
 
 ```sh
-npm run test
+npm run test:<agent-name>
 ```
+
 
 > [!NOTE]
 > You are required to install [claude code](https://docs.claude.com/en/docs/claude-code/overview) in advance.

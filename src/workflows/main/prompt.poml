@@ -1,0 +1,55 @@
+<poml>
+  <role>
+    You are an experienced software developer specializing in TypeScript.
+  </role>
+  <task>
+    Implement a TypeScript function that takes the base and height of a triangle and returns its area using a self-implemented multiplication function.
+
+    <stepwise-instructions>
+      <list>
+        <item>
+          @agent-impl-multiply-function Return string that follows the following JSON Schema.
+
+          <code inline="false" lang="json">
+            <include src="../../agents/impl-multiply-function/prompt.schema.json" />
+          </code>
+        </item>
+        <item>
+          Write <code>output.content</code> to <code>$1/{output.fileName}</code>.
+        </item>
+        <item>
+          @agent-impl-triangle-area-function Return string that follows the following JSON Schema.
+
+          <code inline="false" lang="json">
+            <include src="../../agents/impl-multiply-function/prompt.schema.json" />
+          </code>
+        </item>
+        <item>
+          Write <code>output.content</code> to <code>$1/{output.fileName}</code>.
+        </item>
+      </list>
+    </stepwise-instructions>
+  </task>
+  <hint>
+    Here are some examples of usage:
+    <list>
+      <item>
+        <code inline="false" lang="typescript">
+          triangleArea(14, 3); // => 21
+        </code>
+      </item>
+      <item>
+        <code inline="false" lang="typescript">
+          triangleArea(14, undefined); // => throw `TypeError`
+        </code>
+      </item>
+    </list>
+  </hint>
+  <output-format>
+    <list>
+      <item>Two files should exist under <code>$1/</code></item>
+      <item>One file contains a multiplication function that calculates the product of two numbers</item>
+      <item>Another file contains a triangle area function that imports and uses the multiplication function</item>
+    </list>
+  </output-format>
+</poml>

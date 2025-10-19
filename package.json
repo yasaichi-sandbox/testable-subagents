@@ -11,9 +11,11 @@
     "build:agent": "run-p build:agent:*",
     "build:agent:multiply": "node ./scripts/build/agent.ts ./src/agents/impl-multiply-function",
     "build:agent:triangle-area": "node ./scripts/build/agent.ts ./src/agents/impl-triangle-area-function",
+    "build:workflow": "node ./scripts/build/workflow.ts ./src/workflows/main",
     "build:test": "run-p build:test:*",
     "build:test:multiply": "node ./scripts/build/test.ts ./src/agents/impl-multiply-function",
     "build:test:triangle-area": "node ./scripts/build/test.ts ./src/agents/impl-triangle-area-function",
+    "start": "claude -p '/workflow-main ./artifacts'",
     "test:multiply": "claude -p '/test-impl-multiply-function agent-impl-multiply-function'",
     "test:triangle-area": "claude -p '/test-impl-triangle-area-function agent-impl-triangle-area-function'"
   },
